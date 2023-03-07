@@ -24,9 +24,20 @@
     $usuario -> login("user", "666");
     echo $usuario;*/
 
+    /*criando um novo usuario
     $aluno = new Usuario("aluno", "@alun0");
     $aluno -> insert();
+    echo $aluno;*/
 
-    echo $aluno;
+    /*Alterar um usuario
+    $usuario = new Usuario();
+    $usuario -> loadById(3);
+    $usuario -> update("prof", "123");
+    echo $usuario;*/
+
+    $usuario = new Usuario();
+    $usuario -> loadById(10);
+    $usuario -> delete();
+    echo $usuario;
 
 ?>
