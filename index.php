@@ -19,9 +19,14 @@
     $search = Usuario::search("us");
     echo json_encode($search);*/
 
-    //Carrega um usuario usando o login e a senha
+    /*Carrega um usuario usando o login e a senha
     $usuario = new Usuario();
     $usuario -> login("user", "666");
-    echo $usuario;
+    echo $usuario;*/
+
+    $aluno = new Usuario("aluno", "@alun0");
+    $aluno -> insert();
+
+    echo $aluno;
 
 ?>
